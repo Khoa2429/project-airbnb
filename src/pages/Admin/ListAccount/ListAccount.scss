@@ -1,0 +1,17 @@
+#listAccount {
+  .add-account-button {
+    text-align: center;
+    font-weight: bold;
+    font-size: 16px;
+    padding: 10px 15px;
+    border-radius: 5px;
+    background-color: white;
+    color: rgb(52, 172, 252);
+    border: 1px solid rgb(52, 172, 252);
+    &:hover {
+      background-color: rgb(52, 172, 252);
+      color: white;
+      transition: 0.5s;
+    }
+  }
+}

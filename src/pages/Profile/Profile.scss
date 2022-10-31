@@ -1,0 +1,394 @@
+$color-text-profile: rgb(118, 118, 118);
+$color-text-profile-2: rgb(221, 221, 221);
+$color-text-profile-hover: #35a22c;
+
+#profile {
+  background-color: #f7f7f7;
+  .container {
+    display: flex;
+    @media screen and (max-width: 1000px) {
+      justify-content: center;
+      flex-wrap: wrap;
+    }
+    @media screen and (max-width: 768px) {
+      width: 100%;
+    }
+
+    .profile-info {
+      padding: 0;
+      width: 30%;
+      margin-right: 50px;
+      @media screen and (max-width: 1000px) {
+        width: 80%;
+        margin-right: 0;
+      }
+      .info-preview {
+        box-shadow: 0 0 7px rgb(214, 214, 214);
+        background-color: white;
+        .card {
+          .card-body {
+            position: relative;
+            padding: 30px 30px 25px 30px;
+            img {
+              width: 50%;
+              border-radius: 50%;
+              border: 1px solid $color-text-profile-2;
+            }
+            h1 {
+              font-size: 20px;
+              padding-bottom: 10px;
+              margin-top: 15px;
+              color: #404145;
+            }
+            .email-phone-birthday {
+              p {
+                text-align: left;
+                font-weight: normal;
+                color: $color-text-profile;
+                margin-bottom: 5px;
+                font-family: "Times New Roman", Times, serif;
+              }
+            }
+            .edit-info {
+              position: absolute;
+              top: 10px;
+              right: 10px;
+              border-radius: 50%;
+              border: none;
+              &:hover {
+                background-color: rgb(168, 253, 254);
+              }
+              i {
+                color: blue;
+              }
+            }
+            div {
+              font-size: 14px;
+              color: $color-text-profile;
+              span {
+                display: flex;
+                align-items: center;
+                i {
+                  position: relative;
+                  margin-right: 15px;
+                }
+              }
+              p {
+                margin-bottom: 0;
+                font-weight: bold;
+              }
+            }
+          }
+        }
+      }
+
+      .info-description {
+        box-shadow: 0 0 7px rgb(214, 214, 214);
+        background-color: rgb(255, 255, 255);
+        border-radius: 5px;
+        margin-top: 30px;
+        .card {
+          .card-body {
+            padding: 20px 30px;
+            div {
+              ul {
+                padding-left: 10px;
+                li {
+                  margin-bottom: 5px;
+                  a {
+                    i {
+                      margin-right: 10px;
+                      font-size: 12px;
+                    }
+                  }
+                }
+              }
+              p {
+                font-size: 16px;
+                color: #404145;
+              }
+              a {
+                font-size: 14px;
+                color: #00698c;
+                &:hover {
+                  text-decoration: underline;
+                }
+              }
+            }
+          }
+        }
+      }
+
+      .info-activity {
+        box-shadow: 0 0 7px rgb(214, 214, 214);
+        background-color: white;
+        border-radius: 5px;
+        margin-top: 30px;
+        .card {
+          .card-body {
+            padding: 20px 30px;
+            h1 {
+              font-size: 16px;
+              margin-bottom: 10px;
+              font-weight: bold;
+              color: $color-text-profile;
+            }
+            p {
+              margin-bottom: 0;
+              color: $color-text-profile;
+              text-align: justify;
+            }
+          }
+        }
+      }
+    }
+
+    .profile-job {
+      width: 70%;
+      @media screen and (max-width: 1000px) {
+        width: 80%;
+        margin-top: 30px;
+      }
+      .buying-service {
+        box-shadow: 0 0 7px rgb(214, 214, 214);
+        background-color: white;
+        border-radius: 4px;
+        border: 1px solid $color-text-profile-2;
+        padding: 20px;
+        display: flex;
+        img {
+          width: 60px;
+          margin-left: 15px;
+        }
+        div {
+          margin-left: 25px;
+          h1 {
+            font-size: 17px;
+            margin-bottom: 2px;
+            font-weight: bold;
+            color: $color-text-profile;
+          }
+          p {
+            font-size: 17px;
+            margin-bottom: 5px;
+            color: $color-text-profile;
+          }
+          button {
+            font-size: 17px;
+            margin-bottom: 0;
+            color: #1dbf73;
+            font-weight: bold;
+            background-color: white;
+            border: none;
+            padding: 0;
+            &:hover {
+              color: #37e091;
+              text-decoration: underline;
+            }
+            &:focus {
+              border: none;
+              box-shadow: none;
+            }
+          }
+          #exampleModalCenter {
+            .modal-body {
+              button {
+                position: absolute;
+                top: 10px;
+                right: 10px;
+                background-color: transparent;
+                i {
+                  color: white !important;
+                  font-size: 20px;
+                }
+              }
+              img {
+                width: 100%;
+                margin: 0;
+              }
+              div {
+                padding: 30px;
+                margin: 0;
+                background-color: white;
+                h1 {
+                  font-size: 20px;
+                  margin-bottom: 20px;
+                  color: #404145;
+                }
+                ul {
+                  padding-left: 20px;
+                  li {
+                    font-size: 15px;
+                    font-weight: 400;
+                    color: $color-text-profile;
+                    margin-bottom: 10px;
+                    i {
+                      margin-right: 10px;
+                    }
+                  }
+                }
+                button {
+                  left: 0;
+                  display: block;
+                  position: relative;
+                  padding: 5px 15px;
+                  background-color: #1dbf73;
+                  font-weight: bold;
+                  color: white;
+                  border-radius: 5px;
+                  &:hover {
+                    background-color: #37e091;
+                    text-decoration: none;
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+
+      .new-gig {
+        background-color: white;
+        border-radius: 4px;
+        border: 1px solid $color-text-profile-2;
+        box-shadow: 0 0 7px rgb(214, 214, 214);
+        padding: 20px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-top: 30px;
+        p {
+          margin-bottom: 0;
+          font-size: 16px;
+          color: $color-text-profile;
+        }
+        button {
+          padding: 5px 15px;
+          background-color: #1dbf73;
+          font-weight: bold;
+          color: white;
+          border-radius: 5px;
+          border: none;
+          &:hover {
+            background-color: #37e091;
+          }
+          &:focus {
+            border: none;
+            box-shadow: none;
+          }
+        }
+        #exampleModalCenter2 {
+          .modal-body {
+            div {
+              padding: 30px;
+              margin: 0;
+              h1 {
+                font-size: 20px;
+                margin-top: 15px;
+                margin-bottom: 20px;
+                color: #404145;
+                text-align: justify;
+              }
+              .item {
+                padding: 0;
+                display: flex;
+                align-items: start;
+                img {
+                  width: 50px;
+                  height: 50px;
+                }
+                .content {
+                  padding: 0;
+                  margin-left: 20px;
+                  h1 {
+                    margin-top: 0;
+                    font-size: 17px;
+                    color: #404145;
+                    margin-bottom: 5px;
+                    text-align: justify;
+                  }
+                  p {
+                    font-size: 15px;
+                    margin-bottom: 0;
+                    text-align: justify;
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+
+      .history-booking {
+        background-color: white;
+        border-radius: 4px;
+        border: 1px solid $color-text-profile-2;
+        padding: 0 20px;
+        margin-top: 30px;
+        box-shadow: 0 0 7px rgb(214, 214, 214);
+        .card {
+          width: 100%;
+          border: none;
+          border-bottom: 1px solid $color-text-profile-2;
+          .card-body {
+            display: flex;
+            padding: 20px 0;
+            .history-booking-img {
+              width: 20%;
+              min-width: 100px;
+              @media screen and (max-width: 650px) {
+                min-width: 75px;
+              }
+              img {
+                width: 100%;
+                border-radius: 4px;
+              }
+            }
+            .job-info {
+              margin-left: 20px;
+              .title {
+                font-size: 14px;
+              }
+              .rating-price {
+                font-size: 14px;
+                font-weight: normal;
+                display: flex;
+                align-items: center;
+              }
+              .job-property {
+                font-size: 14px;
+                font-weight: normal;
+              }
+            }
+            .booking-button {
+              position: absolute;
+              bottom: 20px;
+              right: 0;
+              display: flex;
+              @media screen and (max-width: 650px) {
+                bottom: 0;
+              }
+              button {
+                font-weight: 500;
+                font-size: 12px;
+                padding: 4px 10px;
+                @media screen and (max-width: 650px) {
+                  font-size: 10px;
+                  padding: 3px 8px;
+                }
+              }
+            }
+            .done-img {
+              position: absolute;
+              bottom: 20px;
+              right: 10px;
+              img {
+                width: 50px;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

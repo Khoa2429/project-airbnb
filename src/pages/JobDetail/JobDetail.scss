@@ -1,0 +1,315 @@
+$color-text-jobDetail: rgb(118, 118, 118);
+$color-text-jobDetail-2: rgb(181, 180, 180);
+
+#jobDetail {
+  .jobDetail__main {
+    padding: 70px 0;
+    .container {
+      display: flex;
+      @media screen and (max-width: 992px) {
+        flex-wrap: wrap;
+      }
+      .info-job {
+        width: 70%;
+        box-shadow: 0 0 5px rgb(214, 214, 214);
+        border-radius: 5px;
+        @media screen and (max-width: 992px) {
+          width: 100%;
+          margin-bottom: 40px;
+        }
+        .card {
+          .card-header {
+            padding: 20px 30px 10px 30px;
+            .title {
+              font-size: 30px;
+              margin-bottom: 0;
+              text-align: justify;
+            }
+            p {
+              font-size: 16px;
+              font-weight: bold;
+              margin-top: 15px;
+              color: $color-text-jobDetail;
+              i {
+                margin-right: 5px;
+                font-size: 18px;
+              }
+              span {
+                font-weight: normal;
+              }
+            }
+          }
+          .card-body {
+            padding: 30px 30px 40px 30px;
+            .price {
+              font-size: 30px;
+              margin: 15px 0 20px 0;
+              margin-top: 15px;
+            }
+            .img-info {
+              display: flex;
+              @media screen and (max-width: 550px) {
+                flex-direction: column-reverse;
+              }
+              div {
+                width: 60%;
+                img {
+                  width: 100%;
+                  border-radius: 3px;
+                }
+              }
+              ul {
+                width: 40%;
+                padding-left: 25px;
+                @media screen and (max-width: 550px) {
+                  width: 100%;
+                  padding-left: 0;
+                }
+                li {
+                  font-size: 16px;
+                  margin-bottom: 10px;
+                  i {
+                    margin-right: 10px;
+                  }
+                }
+              }
+            }
+            .sub-type {
+              display: flex;
+              margin-top: 25px;
+              div {
+                width: 60%;
+                img {
+                  width: 100%;
+                  border-radius: 3px;
+                }
+              }
+              h1 {
+                padding-left: 25px;
+                font-size: 25px;
+                width: 40%;
+              }
+            }
+          }
+        }
+      }
+
+      .booking-job {
+        width: 30%;
+        margin-left: 50px;
+        @media screen and (max-width: 992px) {
+          width: 100%;
+          margin-left: 0;
+        }
+        .card-1 {
+          box-shadow: 0 0 5px rgb(214, 214, 214);
+          .card-header {
+            display: flex;
+            padding: 0;
+            p {
+              width: calc(100% / 3);
+              margin-bottom: 0;
+              text-align: center;
+              padding: 10px;
+              font-weight: bold;
+              color: $color-text-jobDetail;
+              cursor: pointer;
+            }
+            p:nth-of-type(2) {
+              border-left: 1px solid #d8d8d8;
+              border-right: 1px solid #d8d8d8;
+              background-color: white;
+              border-bottom: 2px solid #1dbf73;
+              color: #1dbf73;
+              cursor: pointer;
+            }
+          }
+          .card-body {
+            padding: 20px;
+            @media screen and (max-width: 992px) {
+              padding-left: 40px;
+              padding-right: 40px;
+            }
+            div {
+              display: flex;
+              justify-content: space-between;
+              margin: 10px 0;
+              h1 {
+                font-size: 14px;
+                color: black;
+              }
+              p {
+                margin-bottom: 0;
+                color: black;
+              }
+            }
+            p {
+              margin-bottom: 20px;
+              color: $color-text-jobDetail;
+            }
+            h1 {
+              color: $color-text-jobDetail;
+              font-size: 14px;
+              i {
+                margin-right: 5px;
+              }
+              i:nth-of-type(2) {
+                margin-left: 5px;
+              }
+            }
+            ul {
+              padding-left: 20px;
+              li {
+                color: $color-text-jobDetail;
+                font-weight: normal;
+                i {
+                  margin-right: 8px;
+                  font-size: 13px;
+                }
+              }
+            }
+            button {
+              width: 100%;
+              padding: 5px;
+              background-color: #1dbf73;
+              color: white;
+              font-weight: 500;
+              border: 1px solid $color-text-jobDetail-2;
+              border-radius: 5px;
+              &:hover {
+                background-color: #23d683;
+              }
+            }
+            h2 {
+              font-size: 14px;
+              color: #1dbf73;
+              text-align: center;
+              margin-top: 15px;
+            }
+          }
+        }
+        .card-2 {
+          margin-top: 25px;
+          text-align: center;
+          background-color: #f7f7f7;
+          box-shadow: 0 0 5px rgb(214, 214, 214);
+          h1 {
+            font-size: 14px;
+            margin-bottom: 15px;
+          }
+          button {
+            background-color: white;
+            border-radius: 4px;
+            border: 1px solid $color-text-jobDetail-2;
+            padding: 3px 10px;
+            &:hover {
+              background-color: #23d683;
+              color: white;
+              border: 1px solid white;
+            }
+          }
+        }
+      }
+    }
+
+    .faq {
+      width: 60%;
+      margin: auto;
+      padding: 20px;
+      margin-top: 50px;
+      .container {
+        display: flex;
+        flex-direction: column;
+        padding: 0;
+        h1 {
+          margin-bottom: 0;
+          font-size: 30px;
+          color: $color-text-jobDetail;
+        }
+        ul {
+          padding-left: 0;
+          li {
+            padding: 15px 0;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            color: $color-text-jobDetail;
+            border-bottom: 1px solid $color-text-jobDetail-2;
+            font-size: 18px;
+            span {
+              font-weight: 600;
+            }
+            i {
+            }
+          }
+        }
+      }
+    }
+
+    .comments {
+      margin: auto;
+      width: 80%;
+      padding: 20px 10px;
+      margin-top: 30px;
+      .container {
+        display: flex;
+        flex-direction: column;
+        h1 {
+          font-size: 18px;
+          color: $color-text-jobDetail;
+          margin-bottom: 20px;
+          border-bottom: 2px solid $color-text-jobDetail-2;
+        }
+        .comment-form {
+          margin-bottom: 15px;
+          button {
+            padding: 4px 12px;
+            border-top-left-radius: 0;
+            border-bottom-left-radius: 0;
+          }
+        }
+        .comment {
+          border-bottom: 1px solid $color-text-jobDetail-2;
+          padding: 15px 0;
+          display: flex;
+          align-items: start;
+          .img-comment {
+            width: 60px;
+            height: 60px;
+            border-radius: 50%;
+            overflow: hidden;
+            .img-anonymous {
+              background-color: black;
+              width: 100%;
+              height: 100%;
+            }
+            img {
+              width: 100%;
+              height: 100%;
+              border-radius: 3px;
+            }
+          }
+          .info-comment {
+            margin-left: 20px;
+            h1 {
+              font-size: 16px;
+              margin-bottom: 10px;
+              color: black;
+              border-bottom: none;
+            }
+            h2 {
+              font-size: 15px;
+              font-weight: normal;
+              margin-bottom: 15px;
+            }
+            p {
+              margin-bottom: 0;
+              display: flex;
+              flex-wrap: wrap;
+            }
+          }
+        }
+      }
+    }
+  }
+}
