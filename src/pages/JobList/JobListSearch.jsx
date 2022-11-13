@@ -47,7 +47,7 @@ export default function JobListSearch(props) {
             <div className="joblist__reset">
               <button
                 className="btn btn-success"
-                title="Click to relay list jobs"
+                title="Click to  list jobs"
                 onClick={() => {
                   props.history.push("/joblist");
                 }}

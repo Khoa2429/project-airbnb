@@ -2,6 +2,10 @@ $color-text-joblist: rgb(118, 118, 118);
 $color-text-joblist-2: rgb(181, 180, 180);
 
 #JobList {
+  background-color: red;
+  &.active{
+    background-color: green;
+  }
   .container {
     padding: 40px 0 50px 0;
     @media screen and (max-width: 992px) {

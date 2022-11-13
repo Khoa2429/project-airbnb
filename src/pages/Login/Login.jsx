@@ -8,7 +8,8 @@ import "./Login.scss";
 import * as yup from "yup";
 import { dangNhapAction } from "../../redux/actions/QuanLyNguoiDungAction";
 import { USER_LOGIN } from "../../util/config";
-
+import HeaderNotForHomePage from "../../_Component/Header/HeaderNotForHomePage";
+import Footer from "../../_Component/Footer/Footer";
 export default function Login(props) {
   const validationSchema = yup.object().shape({
     email: yup
@@ -43,103 +44,142 @@ export default function Login(props) {
   }
 
   return (
-    <div
-      id="Login"
-      className="d-flex justify-content-center align-items-center py-5 text-white col-12 col-md-6"
-    >
-      <form className="w-75 form" onSubmit={formik.handleSubmit}>
-        <div>
-          <div className="text-center">
-            <NavLink to="/home" title="Back to homepage">
-              <h1 style={{ fontSize: "60px", color: "white" }}>
-                friverr
-                <i
-                  style={{ fontSize: "12px" }}
-                  className="fa fa-circle text-success"
-                ></i>
-              </h1>
-            </NavLink>
-          </div>
-        </div>
-        <div>
-          <h2 className="text-white my-5">Login</h2>
-          <div>
+    <div className="login-header">
+      <HeaderNotForHomePage className="headernotforhomepage" />
+      <div className="login-content">
+        <div
+          id="Login"
+          className="d-flex justify-content-center align-items-center py-5  col-12 col-md-6"
+        >
+          <form className="w-75 form" onSubmit={formik.handleSubmit}>
             <div>
-              <div className="form-group">
-                <div className="input-group">
-                  <label htmlFor="email" className="input-group-text w-25">
-                    Account
-                  </label>
-
-                  <Input
-                    className="form-control"
-                    type="email"
-                    placeholder="Please enter your account"
-                    name="email"
-                    id="email"
-                    onChange={formik.handleChange}
-                  />
-                </div>
-
-                <div className="text-danger mt-2">
-                  {formik.errors.email ? (
-                    formik.errors.email
-                  ) : (
-                    <div style={{ visibility: "hidden" }}>1</div>
-                  )}
-                </div>
-              </div>
-
-              <div className="form-group">
-                <div className="d-flex justify-content-end mt-2 mb-2">
-                  <a href="#" title="Click to retrieve password">
-                    Forgot password ?
-                  </a>
-                </div>
-                <div className="input-group">
-                  <label htmlFor="password" className="input-group-text w-25">
-                    Password
-                  </label>
-                  <Input.Password
-                    className="form-control"
-                    type="password"
-                    placeholder="Please enter your password"
-                    name="password"
-                    id="password"
-                    onChange={formik.handleChange}
-                  />
-                </div>
-                <div className="text-danger mt-2">
-                  {formik.errors.password ? (
-                    formik.errors.password
-                  ) : (
-                    <div style={{ visibility: "hidden" }}>1</div>
-                  )}
-                </div>
+              <div className="text-center">
+                <NavLink to="/home" title="Back to homepage">
+                  <h1
+                    style={{
+                      fontSize: "24px",
+                      color: "#404145",
+                      lineHeight: "130%",
+                    }}
+                  >
+                    Sign in to friverr
+                  </h1>
+                </NavLink>
               </div>
               <div className="mb-5 mt-4 text-center">
                 <button
-                  className="btn btn-primary w-100 font-weight-bold"
+                  className="btn btn-primary d-flex justify-content-center align-items-center w-100 font-weight-bold"
                   title="Click to login"
                   type="submit"
                 >
-                  Sign in
+                  <i className="fab fa-facebook" style={{textAlign:'left', font:'10px'}}></i>  Continue with Facebook
+                 
+                </button>
+              </div>
+              <div className="mb-5 mt-4 text-center">
+                <button
+                  style={{ backgroundColor: "#d5d4d2" }}
+                  className="btn d-flex justify-content-center align-items-center w-100 font-weight-bold "
+                  title="Click to login"
+                  type="submit"
+                >
+                  <i className="fab fa-google style={{ textAlign:'left', font:'10px'}}"></i>  Continue with Google
+                 
+                </button>
+              </div>
+              <div className="mb-5 mt-4 text-center fa-brands fa-square-facebook">
+                <button
+                  style={{ backgroundColor: "#d5d4d2" }}
+                  className="btn d-flex justify-content-center align-items-center w-100 font-weight-bold"
+                  title="Click to login"
+                  type="submit"
+                      >
+                  <i className="fab fa-apple" style={{ textAlign:'left', font:'10px'}}></i>  Continue with Apple
+                 
                 </button>
               </div>
             </div>
-            <div className="text-center d-sm-flex justify-content-center">
-              <p className="mr-sm-3 h6">Do not have an account ?</p>
-              <NavLink
-                className="font-weight-bold h6"
-                to="/register"
-                title="Click to register an account"
-              >
-                Register
-              </NavLink>
+
+            <div>
+              <div>
+                <div>
+                  <div className="form-group">
+                    <div className="input-group">
+                      <Input
+                        className="form-control"
+                        type="email"
+                        placeholder="Email/ Username"
+                        name="email"
+                        id="email"
+                        onChange={formik.handleChange}
+                      />
+                    </div>
+
+                    <div className="text-danger mt-2">
+                      {formik.errors.email ? (
+                        formik.errors.email
+                      ) : (
+                        <div style={{ visibility: "hidden" }}>1</div>
+                      )}
+                    </div>
+                  </div>
+                  <div className="form-group">
+                    <div className="input-group">
+                      <Input.Password
+                        className="form-control"
+                        type="password"
+                        placeholder="Password"
+                        name="password"
+                        id="password"
+                        onChange={formik.handleChange}
+                      />
+                    </div>
+                    <div className="text-danger mt-2">
+                      {formik.errors.password ? (
+                        formik.errors.password
+                      ) : (
+                        <div style={{ visibility: "hidden" }}>1</div>
+                      )}
+                    </div>
+                  </div>
+                  <div className="mb-5 mt-4 text-center">
+                    <button
+                      className="btn btn-primary w-100 font-weight-bold"
+                      title="Click to login"
+                      type="submit"
+                    >
+                      Continue
+                    </button>
+                  </div>
+                  <div className="text-center d-sm-flex justify-content-center">
+                    <div className=" mt-2 mb-2 forgot-password">
+                      <a href="#" title="Click to retrieve password">
+                        Remember Me
+                      </a>
+                    </div>
+                    <div className="mt-2 mb-2 keyword">
+                      <a href="#" title="Click to retrieve password">
+                        Forgot password ?
+                      </a>
+                    </div>
+                  </div>
+                </div>
+                <div className="text-center d-sm-flex justify-content-center">
+                  <p className="mr-sm-3 h6">Not a member yet?</p>
+                  <NavLink
+                    className="font-weight-bold h6"
+                    to="/register"
+                    title="Click to register an account"
+                  >
+                    Join now
+                  </NavLink>
+                </div>
+              </div>
             </div>
-          </div>
+          </form>
         </div>
-      </form>
+      </div>
+      <Footer />
     </div>
   );
 }

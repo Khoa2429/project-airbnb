@@ -84,7 +84,7 @@ function Carousel(props) {
             <span className="ml-2">Website Design</span>
             <span>WordPress</span>
             <span>Logo Design</span>
-            <span>HTML</span>
+            <span>Video Editing</span>
           </p>
         </div>
       </div>

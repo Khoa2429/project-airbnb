@@ -28,19 +28,22 @@ export default function JobList(props) {
     dispatch(layDanhSachCongViecAction());
   }, []);
 
+  const [test, setTest] = useState(false)
+  console.log(test, 'ádasdasdasdasd')
   return (
     <section>
       <HeaderNotForHomePage />
       <Suggested />
       <Fragment>
-        <div id="JobList">
+        <div id="JobList" className={test === true ? 'active' : ''}>
           <div className="container">
             <div className="joblist__reset">
               <button
                 className="btn btn-success"
                 title="Click to relay list jobs"
                 onClick={() => {
-                  window.location.reload();
+                  // window.location.reload();
+                  setTest(!test)
                 }}
               >
                 Relay

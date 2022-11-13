@@ -1,55 +1,65 @@
-#Register {
-  border-radius: 10px;
-  background-color: rgba(0, 0, 0, 0.6);
-  form {
-    .input-group {
-      label {
-        background-color: rgb(53, 9, 9);
-        color: white;
-        border: 1px solid #9f9c01;
-        border-top-right-radius: 0;
-        border-bottom-right-radius: 0;
-        padding: 4px 10px;
-        @media screen and (max-width: 950px) {
-          width: 30% !important;
+  .register_content{
+    display: flex;
+    justify-content:center;
+    #Register {
+      border-radius: 10px;
+      background-color: #28a745;
+      margin: 30px 0;
+      box-shadow:0px 0px 5px 5px;
+      form {
+        .input-group {
+          label {
+            background-color: rgb(53, 9, 9);
+            color: white;
+            border: 1px solid #9f9c01;
+            border-top-right-radius: 0;
+            border-bottom-right-radius: 0;
+            padding: 4px 10px;
+            @media screen and (max-width: 950px) {
+              width: 30% !important;
+            }
+            @media screen and (max-width: 750px) {
+              width: 25% !important;
+            }
+            @media screen and (max-width: 810px) {
+              font-size: 14px;
+            }
+            @media screen and (max-width: 750px) {
+              font-size: 16px;
+            }
+            @media screen and (max-width: 470px) {
+              width: 30% !important;
+              padding: 4px 5px;
+            }
+            @media screen and (max-width: 410px) {
+              font-size: 13px;
+            }
+          }
         }
-        @media screen and (max-width: 750px) {
-          width: 25% !important;
+    
+        a {
+          color: black;
+          &:hover {
+            color: yellow;
+          }
         }
-        @media screen and (max-width: 810px) {
+        #addSkill,
+        #addCertification {
           font-size: 14px;
+          background-color: #007bff;
+          color: black;
+          border: 1px solid #007bff;
+          border-top-left-radius: 0;
+          border-bottom-left-radius: 0;
         }
-        @media screen and (max-width: 750px) {
-          font-size: 16px;
-        }
-        @media screen and (max-width: 470px) {
-          width: 30% !important;
-          padding: 4px 5px;
-        }
-        @media screen and (max-width: 410px) {
-          font-size: 13px;
+        #addSkill:hover,
+        #addCertification:hover {
+          background-color: #2991ff;
         }
       }
-    }
-
-    a {
-      color: white;
-      &:hover {
-        color: yellow;
-      }
-    }
-    #addSkill,
-    #addCertification {
-      font-size: 14px;
-      background-color: #007bff;
-      color: white;
-      border: 1px solid #007bff;
-      border-top-left-radius: 0;
-      border-bottom-left-radius: 0;
-    }
-    #addSkill:hover,
-    #addCertification:hover {
-      background-color: #2991ff;
     }
   }
-}
+  
+
+  
+

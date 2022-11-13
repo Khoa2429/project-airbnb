@@ -15,10 +15,10 @@ export default function Loading(props) {
         >
           <img
             style={{
-              width: "50%",
+              width: "20%",
               zIndex: "1000",
             }}
-            src="https://genzakit.com/wp-content/uploads/2021/05/Rotate-Loading-Animation.gif"
+            src="https://c.tenor.com/Y0KQHSObFMsAAAAC/trippy-loading.gif"
             alt="loading-gif"
           />
         </div>
