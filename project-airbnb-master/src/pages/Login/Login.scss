@@ -1,0 +1,44 @@
+#Login {
+  height: 100%;
+  border-radius: 10px;
+  background-color: rgba(0, 0, 0, 0.6);
+  form {
+
+    .input-group {
+      label {
+        background-color: rgb(53, 9, 9);
+        color: white;
+        border: 1px solid #9f9c01;
+        border-top-right-radius: 0;
+        border-bottom-right-radius: 0;
+        padding: 4px 10px;
+        @media screen and (max-width: 950px) {
+          width: 30% !important;
+        }
+        @media screen and (max-width: 750px) {
+          width: 25% !important;
+        }
+        @media screen and (max-width: 810px) {
+          font-size: 14px;
+        }
+        @media screen and (max-width: 750px) {
+          font-size: 16px;
+        }
+        @media screen and (max-width: 470px) {
+          width: 30% !important;
+          padding: 4px 5px;
+        }
+        @media screen and (max-width: 410px) {
+          font-size: 13px;          
+        }
+      }
+    }
+    a {
+      color: white;
+
+      &:hover {
+        color: yellow;
+      }
+    }
+  }
+}

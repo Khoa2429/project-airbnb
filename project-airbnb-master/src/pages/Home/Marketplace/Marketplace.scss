@@ -1,0 +1,51 @@
+#marketplace {
+  padding-top: 60px;
+  padding-bottom: 40px;
+  .my-container {
+    h1 {
+      margin-bottom: 50px;
+      text-align: center;
+      position: relative;
+      font-size: 32px;
+      color: #404145;
+    }
+    .roomtype {
+      display: flex;
+      flex-wrap: wrap;
+      text-align: center;
+      a {
+        margin-bottom: 20px;
+        width: 20%;
+        border-radius: 5px;
+        @media screen and (max-width: 900px) {
+          width: calc(100% / 3);
+        }
+        @media screen and (max-width: 600px) {
+          width: 50%;
+        }
+        &:hover img {
+          border-bottom: 2px solid #35a22c;
+          transition: 0.5s;
+          transform: scale(1.1);
+          padding-bottom: 0;
+        }
+        img {
+          height: 65px;
+          width: 50px;
+          padding-top: 10px;
+          padding-bottom: 5px;
+          margin-bottom: 5px;
+          border-bottom: 2px solid rgb(181, 180, 180);
+        }
+        p {
+          color: black;
+          font-size: 17px;
+          font-weight: 500;
+        }
+        &:hover {
+          background-color: rgb(183, 248, 246);
+        }
+      }
+    }
+  }
+}

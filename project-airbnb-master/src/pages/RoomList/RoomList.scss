@@ -1,0 +1,182 @@
+$color-text-roomlist: rgb(118, 118, 118);
+$color-text-roomlist-2: rgb(181, 180, 180);
+
+#RoomList {
+  .container {
+    padding: 40px 0 50px 0;
+    @media screen and (max-width: 992px) {
+      max-width: 100%;
+    }
+    .roomlist__reset {
+      padding-left: 20px;
+      margin-bottom: 20px;
+      button {
+        padding: 3px 20px;
+        font-weight: bold;
+      }
+    }
+
+    .roomlist__filter {
+      padding-left: 20px;
+      .filter-box {
+        display: flex;
+        flex-wrap: wrap;
+        .filter-button {
+          @media screen and (max-width: 575px) {
+            .ant-form .ant-form-item .ant-form-item-label {
+              display: block;
+              width: 100%;
+            }
+            label {
+              padding-bottom: 0;
+            }
+          }
+          font-weight: bold;
+          margin-right: 30px;
+        }
+      }
+      @media screen and (max-width: 575px) {
+        .ant-form-item .ant-form-item-label {
+          padding-bottom: 0 !important;
+        }
+      }
+      @media screen and (max-width: 510px) {
+        .ant-form .ant-form-item {
+          width: 100%;
+          display: flex;
+          flex-wrap: nowrap;
+          justify-content: start;
+          margin-bottom: 10px;
+        }
+        .ant-form .ant-form-item .ant-form-item-label {
+          display: block;
+          flex: none;
+        }
+        .filter-box .filter-button label {
+          width: 100px;
+        }
+      }
+    }
+
+    .services-available {
+      font-size: 16px;
+      color: $color-text-roomlist;
+      padding-left: 20px;
+      margin-bottom: 0;
+      @media screen and (max-width: 575px) {
+        margin-top: 20px;
+      }
+    }
+
+    .roomlist__list {
+      display: flex;
+      flex-wrap: wrap;
+      @media screen and (max-width: 900px) {
+        justify-content: center;
+      }
+      .roomlist-item {
+        width: 25%;
+        padding: 15px;
+        @media screen and (max-width: 900px) {
+          width: 30%;
+        }
+        @media screen and (max-width: 820px) {
+          width: calc(100% / 3);
+        }
+        @media screen and (max-width: 700px) {
+          width: 40%;
+        }
+        @media screen and (max-width: 650px) {
+          width: 45%;
+        }
+        @media screen and (max-width: 580px) {
+          width: 50%;
+        }
+        @media screen and (max-width: 500px) {
+          width: 100%;
+        }
+        .card {
+          height: 300px;
+          overflow: hidden;
+          box-shadow: 0 0 5px rgb(180, 180, 180);
+          @media screen and (max-width: 500px) {
+            display: flex !important;
+            flex-direction: row;
+            flex-wrap: wrap;
+            height: auto;
+          }
+          &:hover {
+            .roomlist-img {
+              img {
+                transform: scale(1.15);
+                transition: 0.5s;
+              }
+            }
+            .card-footer {
+              p {
+                .heart {
+                  color: red;
+                }
+              }
+            }
+          }
+          .roomlist-img {
+            height: 150px !important;
+            overflow: hidden;
+            @media screen and (max-width: 500px) {
+              width: 30%;
+              height: 120px !important;
+            }
+            img {
+              width: 100%;
+              height: 100%;
+              display: block;
+            }
+          }
+          .card-body {
+            padding: 15px 20px;
+            @media screen and (max-width: 500px) {
+              width: 70%;
+            }
+            div {
+              height: 50px;
+              margin-bottom: 0;
+              h1 {
+                font-size: 15px;
+                line-height: 20px;
+              }
+            }
+            p {
+              font-size: 14px;
+              display: flex;
+              align-items: center;
+              margin-bottom: 0;
+              .start {
+                color: orange;
+                margin-right: 5px;
+              }
+            }
+          }
+          .card-footer {
+            padding: 10px 20px;
+            color: $color-text-roomlist;
+            @media screen and (max-width: 500px) {
+              width: 100%;
+              padding: 5px 20px;
+            }
+            p {
+              margin-bottom: 0;
+              font-size: 12px;
+              display: flex;
+              align-items: center;
+              justify-content: space-between;
+              .heart {
+                font-size: 16px;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,26 @@
+.slick-next:before {
+  color: black !important;
+  font-size: 3rem !important;
+  border-radius: 50%;
+  position: absolute;
+  right: 10px;
+  top: -10px;
+}
+
+.slick-prev:before {
+  color: black !important;
+  font-size: 3rem !important;
+  border-radius: 50%;
+  position: absolute;
+  left: 10px;
+  top: -10px;
+}
+
+.slick-prev,
+.slick-next {
+  z-index: 10;
+}
+
+.width-item {
+  width: 86% !important;
+}

@@ -1,0 +1,26 @@
+body {
+  max-width: 1400px;
+  width: 100%;
+  margin: auto !important;
+  box-sizing: border-box;
+  overflow-x: hidden;
+}
+
+.my-container{
+  padding-left: 2.5%;
+  padding-right: 2.5%;
+  max-width: 1400px;
+  margin: auto;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+li{
+  list-style: none;
+}
+
+a{
+  text-decoration: none;
+}
