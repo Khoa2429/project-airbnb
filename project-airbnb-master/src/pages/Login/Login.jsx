@@ -53,10 +53,6 @@ export default function Login(props) {
             <NavLink to="/home" title="Back to homepage">
               <h1 style={{ fontSize: "60px", color: "white" }}>
                 airbnb
-                <i
-                  style={{ fontSize: "12px" }}
-                  className="fa fa-circle text-success"
-                ></i>
               </h1>
             </NavLink>
           </div>
