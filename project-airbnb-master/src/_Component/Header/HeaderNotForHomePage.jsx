@@ -187,7 +187,7 @@ export default function Header(props) {
               to="/home"
               title="airbnb"
             >
-              airbnb<i className="fa fa-circle text-success"></i>
+              airbnb
             </NavLink>
 
             <div className="nav-bar-search input-group-sm">
